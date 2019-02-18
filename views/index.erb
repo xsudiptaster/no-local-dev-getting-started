@@ -9,7 +9,9 @@
 
     <% @contacts.each do |contact| %>
       <tr>
-        <td><%= contact.firstname %></td>
+        <td>
+          <input type=text value = %= contact.firstname % />
+          <%= contact.firstname %></td>
         <td><%= contact.lastname %></td>
         <td><%= contact.email %></td>
       </tr>
